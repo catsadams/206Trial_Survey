@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+
+  <script>
+
+  </script>
+
+
+  <title>ONC-206 Survey Info</title>
+
+  <style>
+    html,body,h1,h2,h3,h4,h5 {font-family: "Raleway", sans-serif}
+  </style>
+
+
+</head>
+<body>
+
+  <div class="w3-padding-large">
+
+ <div class="w3-row-padding w3-padding-16 w3-left-align">
+
+        <div class= "w3-half w3-left-align">
+            <img src="/../static/images/ONCS.jpeg" width='300px'/>
+            <BR>
+            <h1 class="w3-text-grey w3-padding-16">ONC-206 Clinical Trial Symptoms Survey</h1>
+          </div>
+
+
+  {{message}}
+
+    <form action="/../flask_app.py" id="survey_page" method="POST">
+
+      <div class="w3-row-padding w3-padding-16 w3-left-align">
+       <H3>Tell us about your symptoms over the last 24 hours:</H3>
+        <div class="w3-half w3-left-align w3-padding-16">
+          <label for="headache"><b><font style="color:#27AE60; font-size: large;">Headache</font></b></label><br>
+          <input type="radio" name="headache" value="none"> None</input><br>
+          <input type="radio" name="headache" value="mild"> Mild</input><br>
+          <input type="radio" name="headache" value="moderate"> Moderate </input><br>
+          <input type="radio" name="headache" value="severe"> Severe </input><br><br>
+
+          <label for="nausea"><b><font style="color:#27AE60; font-size: large;">Nausea</font></b></label><br>
+          <input type="radio" name="nausea" value="none"> None</input><br>
+          <input type="radio" name="nausea" value="mild"> Mild</input><br>
+          <input type="radio" name="nausea" value="moderate"> Moderate </input><br>
+          <input type="radio" name="nausea" value="severe"> Severe </input><br><br>
+
+          <label for="vomiting"><b><font style="color:#27AE60; font-size: large;">Vomiting</font></b></label><br>
+          <input type="radio" name="vomiting" value="none"> None</input><br>
+          <input type="radio" name="vomiting" value="mild"> Mild</input><br>
+          <input type="radio" name="vomiting" value="moderate"> Moderate </input><br>
+          <input type="radio" name="vomiting" value="severe"> Severe </input><br><br>
+
+          <label for="dizziness"><b><font style="color:#27AE60; font-size: large;">Dizziness</font></b></label><br>
+          <input type="radio" name="dizziness" value="none"> None</input><br>
+          <input type="radio" name="dizziness" value="mild"> Mild</input><br>
+          <input type="radio" name="dizziness" value="moderate"> Moderate </input><br>
+          <input type="radio" name="dizziness" value="severe"> Severe </input><br><br>
+
+          <label for="fatigue"><b><font style="color:#27AE60; font-size: large;">Fatigue</font></b></label><br>
+          <input type="radio" name="fatigue" value="none"> None</input><br>
+          <input type="radio" name="fatigue" value="mild"> Mild</input><br>
+          <input type="radio" name="fatigue" value="moderate"> Moderate </input><br>
+          <input type="radio" name="fatigue" value="severe"> Severe </input><br><br>
+
+          <label for="GIUpset"><b><font style="color:#27AE60; font-size: large;">GI Upset</font></b></label><br>
+          <input type="radio" name="GIUpset" value="none"> None</input><br>
+          <input type="radio" name="GIUpset" value="mild"> Mild</input><br>
+          <input type="radio" name="GIUpset" value="moderate"> Moderate </input><br>
+          <input type="radio" name="GIUpset" value="severe"> Severe </input><br><br>
+
+          <label for="dec_app"><b><font style="color:#27AE60; font-size: large;">Decreased Appetite</font></b></label><br>
+          <input type="radio" name="dec_app" value="none"> None</input><br>
+          <input type="radio" name="dec_app" value="mild"> Mild</input><br>
+          <input type="radio" name="dec_app" value="moderate"> Moderate </input><br>
+          <input type="radio" name="dec_app" value="severe"> Severe </input><br><br>
+
+          <label for="weightloss"><b><font style="color:#27AE60; font-size: large;">Weight Loss</font></b></label><br>
+          <input type="radio" name="weightloss" value="none"> None</input><br>
+          <input type="radio" name="weightloss" value="mild"> Mild</input><br>
+          <input type="radio" name="weightloss" value="moderate"> Moderate </input><br>
+          <input type="radio" name="weightloss" value="severe"> Severe </input><br><br>
+
+          <label for="diff_standing"><b><font style="color:#27AE60; font-size: large;">Difficulty Standing</font></b></label><br>
+          <input type="radio" name="diff_standing" value="none"> None</input><br>
+          <input type="radio" name="diff_standing" value="mild"> Mild</input><br>
+          <input type="radio" name="diff_standing" value="moderate"> Moderate </input><br>
+          <input type="radio" name="diff_standing" value="severe"> Severe </input><br><br>
+
+          <label for="diff_walking"><b><font style="color:#27AE60; font-size: large;">Difficulty Walking</font></b></label><br>
+          <input type="radio" name="diff_walking" value="none"> None</input><br>
+          <input type="radio" name="diff_walking" value="mild"> Mild</input><br>
+          <input type="radio" name="diff_walking" value="moderate"> Moderate </input><br>
+          <input type="radio" name="diff_walking" value="severe"> Severe </input><br><br>
+
+          <label for="ataxia"><b><font style="color:#27AE60; font-size: large;">Ataxia (Coordination Issues)</font></b></label><br>
+          <input type="radio" name="ataxia" value="none"> None</input><br>
+          <input type="radio" name="ataxia" value="mild"> Mild</input><br>
+          <input type="radio" name="ataxia" value="moderate"> Moderate </input><br>
+          <input type="radio" name="ataxia" value="severe"> Severe </input><br><br>
+          <!--JAVASCRIPT TO ADD NEW SYMPTOM HERE-->
+
+
+          <label for="OTCMeds"><b><font style="color:#27AE60; font-size: large;">OTC Meds (check all that apply)</font></b></label><br>
+          <input type="checkbox" name="OTCMeds" value="Ibuprofen"> Ibuprofen</input><br>
+          <input type="checkbox" name="OTCMeds" value="Tylenol"> Tylenol</input><br>
+          <input type="checkbox" name="OTCMeds" value="Tums"> Tums</input><br>
+          <input type="checkbox" name="OTCMeds" value="Pepcid"> Pepcid</input><br>
+          <input type="checkbox" name="OTCMeds" value="Gas-x"> Gas-x</input><br><br>
+          <!--JAVASCRIPT TO ADD NEW MEDS HERE-->
+
+
+          </div>
+      </div>
+
+
+      <div class="w3-row-padding w3-padding-16 w3-left-align">
+        <input type="submit" id="submitButton" value="Submit your survey" name="submit"
+
+        class="w3-button w3-blue w3-padding-large w3-large w3-margin-top">
+      </div>
+
+
+  </form>
+
+</div>
+
+
+<footer class="w3-container w3-teal w3-center w3-margin-top">
+  <p>Powered by <a href="https://www.w3schools.com/w3css/default.asp" target="_blank">w3.css</a></p>
+</footer>
+
+</body>
+</html>
